@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="content" method="install">
+	<name>plg_content_capdropper</name>
+	<creationDate>17/07/2015</creationDate>
+	<author>Andrei Zhitkov</author>
+	<authorEmail>zhitkov.andrei@gmail.com</authorEmail>
+	<authorUrl>joomla.org</authorUrl>
+	<copyright>(c) 2015 Andrei Zhitkov. All rights reserved.</copyright>
+    <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<version>1.7</version>
+	<description>PLG_CONTENT_CAPDROPPER_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="capdropper">capdropper.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_capdropper.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_capdropper.sys.ini</language>
+		<language tag="ru-RU">language/ru-RU/ru-RU.plg_content_capdropper.ini</language>
+		<language tag="ru-RU">language/ru-RU/ru-RU.plg_content_capdropper.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+		<fieldset name="basic">
+		<field name="cd_is_enabled" type="radio"
+                    value="1"
+					default="1"
+					description="ENABLE_DESCRIPTION"
+					label="ENABLE_LABEL"
+                    class="radio btn-group btn-group-yesno"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="autoinsert" type="radio"
+					default="1"
+					description="AUTOINSERT_DESCRIPTION"
+					label="AUTOINSERT_LABEL"
+                    class="radio btn-group btn-group-yesno"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="autoignore" type="text" size="60"
+					default="com_contact, com_k2, com_ars"
+					description="AUTOIGNORE_DESCRIPTION"
+					label="AUTOIGNORE_LABEL"
+					>
+				</field>
+				<field name="articlesonly" type="radio"
+					default="1"
+					description="ARTICLESONLY_DESCRIPTION"
+					label="ARTICLESONLY_LABEL"
+                    class="radio btn-group btn-group-yesno"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="usetemplate" type="list"
+					default="1"
+					description="USETEMPLATE_DESCRIPTION"
+					label="USETEMPLATE_LABEL"
+					>
+					<option value="1">JDEFAULT</option>
+                    <option value="0">TEMPLATE</option>
+				</field>
+				<field name="cssclass" type="text"
+					default="capdropper"
+					description="CSSCLASS_DESCRIPTION"
+					label="CSSCLASS_LABEL"
+					>
+				</field>
+				<field name="cssstyle" type="textarea"
+					cols="30" rows="5"
+					default="float:left; font-size:3em; padding:10px 5px 5px 0; font-weight:bold;"
+					description="CSSSTYLE_DESCRIPTION"
+					label="CSSSTYLE_LABEL"
+					>
+				</field>
+		</fieldset>
+		<fieldset name="INSTRUCTIONS">
+				<field type="spacer"
+					label="INSTRUCTIONS_TEXT"
+					>
+					
+				</field>
+		</fieldset>
+		</fields>
+	</config>
+</extension>

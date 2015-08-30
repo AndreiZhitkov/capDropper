@@ -81,9 +81,9 @@
 					>
 				</field>
 		</fieldset>
-		<fieldset name="INSTRUCTIONS">
+		<fieldset name="help">
 				<field type="spacer"
-					label="INSTRUCTIONS_TEXT"
+					label="HELP_TEXT"
 					>
 					
 				</field>
